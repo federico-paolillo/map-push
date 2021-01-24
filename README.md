@@ -46,7 +46,7 @@ So, how do you use `mapPush` ?
 
 `mapPush` has the following signature: `mapPush(map, key, value)`  
 You have to pass a `Map`, the key of an entry (that might not exists) and a value.  
-In return you will get new lenght of the `Array` (like `Array.push()`).  
+In return you will get new length of the `Array` (like `Array.push()`).  
 
 The NPM package is hybrid, that means that you get both the ES Modules or the CommonJS version. 
 
