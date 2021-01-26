@@ -1,5 +1,9 @@
 # map-push
-
+	
+![GitHub](https://img.shields.io/github/license/federico-paolillo/map-push?style=flat-square)
+![Codecov](https://img.shields.io/codecov/c/github/federico-paolillo/map-push?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/federico-paolillo/map-push/continuous-integration?style=flat-square)  
+	
 Pushes new items to Array entries of a Map
 
 ## Introduction
