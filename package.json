@@ -1,6 +1,6 @@
 {
   "name": "map-push",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Push new items to Array entries of a Map",
   "exports": {
     ".": "./dist/index.mjs",
@@ -13,15 +13,15 @@
   "scripts": {
     "pretest": "npm run clean:all && npm run build:test",
     "test": "jest",
-	"clean:build": "rimraf dist",
-	"clean:codecov": "rimraf codecov",
-	"clean:all": "npm run clean:build && npm run clean:codecov",
+    "clean:build": "rimraf dist",
+    "clean:codecov": "rimraf codecov",
+    "clean:all": "npm run clean:build && npm run clean:codecov",
     "prebuild": "npm run clean:build",
-	"build:test": "tsc --project tsconfig.jest.json --module commonjs",
+    "build:test": "tsc --project tsconfig.jest.json --module commonjs",
     "build:esm": "tsc --project tsconfig.json --module es2020",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
     "build": "npm run build:esm && npm run build:cjs",
-	"postbuild": "renamer dist/* --find '.js' --replace '.mjs'",
+    "postbuild": "renamer dist/* --find '.js' --replace '.mjs'",
     "prerelease": "npm run build",
     "release": "np",
     "postrelease": "npm run clean:all",
