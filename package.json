@@ -1,6 +1,6 @@
 {
   "name": "map-push",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Push new items to Array entries of a Map",
   "exports": {
     ".": "./dist/index.mjs",
