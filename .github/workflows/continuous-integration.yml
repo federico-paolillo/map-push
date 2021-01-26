@@ -1,26 +1,26 @@
 name: continuous-integration
-on:
-  push:
-    tags-ignore:
-      - 'v*.*.*'
+on: 
+ push:
+  tags-ignore:
+   - 'v*.*.*'
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node
-        with: 
-          node-version: '15'
-      - name: Install
-        run: npm install
-      - name: Test
-        run: npm run test
-      - name: Codecov
-        uses: codecov/codecov-action@v1
-        with: 
-          files: '${{GITHUB_WORKSPACE}}/codecov/lcov.info'
-          fail_ci_if_error: true
-          name: 'map-push Coverage'
+ test:
+  runs-on: ubuntu-latest
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node
+      with: 
+       node-version: '15'
+    - name: Install
+      run: npm install
+    - name: Test
+      run: npm run test
+    - name: Codecov
+      uses: codecov/codecov-action@v1
+      with: 
+       files: '${{GITHUB_WORKSPACE}}/codecov/lcov.info'
+       fail_ci_if_error: true
+       name: 'map-push Coverage' 
       
