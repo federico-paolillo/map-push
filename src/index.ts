@@ -8,7 +8,7 @@ type UnknownMap = Map<unknown, unknown>;
  * @param key The key of an Array entry to push the value to
  * @param value The value to push to the Array entry
  */
-export default function mapPush(map: UnknownMap, key: unknown, value: unknown): number {
+export function mapPush(map: UnknownMap, key: unknown, value: unknown): number {
 
     if (!map || !(map instanceof Map)) throw new Error('You must pass an instance of Map to mapPush');
 

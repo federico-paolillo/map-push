@@ -56,13 +56,13 @@ The NPM package is hybrid, that means that you get both the ES Modules and the C
 
 ### With CommonJS
 
-`const mapPush = require('map-push/cjs');`
+`const { mapPush } = require('map-push/cjs');`
 
 **Note**: Import from `/cjs` folder !
 
 ### With ES Modules
 
-`import mapPush from 'map-push'`
+`import { mapPush } from 'map-push'`
 
 What about installation ? You have two options...
 
