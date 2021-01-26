@@ -22,7 +22,7 @@ jobs:
    - name: Codecov
      uses: codecov/codecov-action@v1
      with: 
-      files: '${{github.workflow}}/codecov/lcov.info'
+      files: 'codecov/lcov.info'
       fail_ci_if_error: true
       name: 'map-push Coverage' 
       

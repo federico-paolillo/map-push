@@ -11,14 +11,14 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-	"pretest": "npm run clean && npm run build:test",
-	"posttest" : "npm run clean",
+    "pretest": "npm run clean && npm run build:test",
+    "posttest": "npm run clean",
     "test": "jest",
     "clean": "rimraf dist",
     "build:test": "tsc --project tsconfig.jest.json --module commonjs",
     "build:esm": "tsc --project tsconfig.json --module es2020",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
-	"prebuild": "npm run clean",
+    "prebuild": "npm run clean",
     "build": "npm run build:esm && npm run build:cjs"
   },
   "repository": {
