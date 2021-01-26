@@ -11,12 +11,15 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "npm run clean && npm run build:test && jest dist --coverage",
+	"pretest": "npm run clean && npm run build:test",
+	"posttest" : "npm run clean",
+    "test": "jest",
     "clean": "rimraf dist",
-    "build:test": "tsc --project tsconfig.test.json --module commonjs --outDir dist",
-    "build:esm": "tsc --project tsconfig.json --module es2020 --outDir dist",
+    "build:test": "tsc --project tsconfig.jest.json --module commonjs",
+    "build:esm": "tsc --project tsconfig.json --module es2020",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs"
+	"prebuild": "npm run clean",
+    "build": "npm run build:esm && npm run build:cjs"
   },
   "repository": {
     "type": "git",

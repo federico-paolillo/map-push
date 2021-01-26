@@ -48,21 +48,23 @@ So, how do you use `mapPush` ?
 You have to pass a `Map`, the key of an entry (that might not exists) and a value.  
 In return you will get new length of the `Array` (like `Array.push()`).  
 
-The NPM package is hybrid, that means that you get both the ES Modules or the CommonJS version. 
+The NPM package is hybrid, that means that you get both the ES Modules and the CommonJS version. 
 
 ### With CommonJS
 
 `const mapPush = require('map-push/cjs');`
 
+**Note**: Import from `/cjs` folder !
+
 ### With ES Modules
 
 `import mapPush from 'map-push'`
 
+What about installation ? You have two options...
+
 ## Installation
 
 You can get `mapPush` on NPM by running `npm install map-push`.  
-`mapPush` is written in TypeScript, so typings are shipped with the package.  
-
-Given that this package is a small utility function I advise against installing the package, instead, simply copy/paste the function.  
+*Or*, as this is a small utility function, I suggest to simply copy/paste it and skipping NPM.  
 
 

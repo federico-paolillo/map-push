@@ -1,4 +1,4 @@
-import mapPush from './index';
+import mapPush from '../src/index';
 
 test('A new item is pushed to the Array at the Key specified', () => {
 
