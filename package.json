@@ -20,10 +20,10 @@
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
     "prebuild": "npm run clean",
     "build": "npm run build:esm && npm run build:cjs",
-	"prerelease": "npm run build",
-	"release": "np",
-	"postrelease": "npm run clean",
-	"prepack": "npm run build"
+    "prerelease": "npm run build",
+    "release": "np",
+    "postrelease": "npm run clean",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
