@@ -1,12 +1,12 @@
 type UnknownMap = Map<unknown, unknown>;
 
 /**
- * Pushes the value provided if an entry of type Array exists for the key specified.
- * If no entry exists with the key given, a new entry of type Array with the value specified is created.
+ * Pushes the value provided to an entry of type Array corresponding to the key specified.
+ * If no entry exists with the key given, a new entry of type Array initialized with the value specified is created.
  * If an entry exists and is not of type array, this method will call Map.set() with the key and value provided.
- * @param map The Map instance
- * @param key The key of an array element to push the value to
- * @param value The value to push to the array element
+ * @param map The Map instance to work with
+ * @param key The key of an Array entry to push the value to
+ * @param value The value to push to the Array entry
  */
 export default function mapPush(map: UnknownMap, key: unknown, value: unknown): number {
 
